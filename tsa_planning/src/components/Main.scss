@@ -1,0 +1,34 @@
+@import '../styles/modules';
+
+.main {
+    display: flex;
+    
+
+    @include onDesktop-s {
+        @include centralize;
+    }
+
+    &__header {
+        width: 100%;
+        text-align: center;
+        padding-top: 30vh;
+        margin-inline: auto;
+        font-size: 38px;
+        line-height: 50px;
+        font-weight: 600;
+        
+
+        @include centralize;
+
+        @include onTablet {
+            font-size: 55px;
+            line-height: 75px;
+        }
+
+        @include onDesktop-s {
+            font-size: 65px;
+            line-height: 95px;
+        }
+        
+    }
+}
