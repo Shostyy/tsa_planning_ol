@@ -2,6 +2,11 @@
 
 .main {
     display: flex;
+    flex-direction: column;
+
+    &__content {
+        display: flex;
+    }
     
 
     @include onDesktop-s {
@@ -31,4 +36,61 @@
         }
         
     }
+}
+
+.left-sidebar {
+    box-sizing: border-box;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 74px - 50px);
+    width: 60px;
+    z-index: -1;
+    background-color: #33333a;
+
+
+    &__list {
+
+    }
+
+    &__item {
+        
+    }
+
+    &__link {
+        display: block;
+        width: 50px;
+        height: 50px;
+        box-shadow: 0px 10px 10px -15px #fff; 
+        margin-bottom: 30px;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &--open {
+            
+            background-image: url("../../public/images/operArrow.svg");
+        }
+
+        &--filter {
+            
+            background-image: url("../../public/images/filter.svg");
+        }
+
+        &--chart {
+            
+            background-image: url("../../public/images/chartLine.svg");
+        }
+
+        &--open {
+            
+            background-image: url("../../public/images/operArrow.svg");
+        }
+    }
+}
+
+.chart__wrapper {
+    padding: 50px;
 }

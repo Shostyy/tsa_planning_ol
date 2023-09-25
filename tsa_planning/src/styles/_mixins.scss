@@ -23,3 +23,11 @@
     transform: scale(1.1);
   }
 }
+
+@mixin hover-scale-1-05 {
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

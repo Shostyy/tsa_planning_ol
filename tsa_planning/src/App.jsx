@@ -3,6 +3,7 @@ import React from "react";
 import { LoginPopup } from "./components/LoginPopup";
 import { Header } from "./components/Header";
 import { Main } from "./components/Main";
+import { Footer } from "./components/Footer";
 import './styles/general.scss';
 
 
@@ -12,6 +13,7 @@ function App() {
             <Header />
             <LoginPopup />
             <Main />
+            <Footer />
         </div>
     )
 }
